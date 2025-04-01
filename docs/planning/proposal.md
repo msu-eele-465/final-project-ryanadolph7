@@ -15,12 +15,14 @@ My embedded system will allow me to detect altitude and pressure from a pololu s
 What hardware will you require? Provide a conceptual circuit diagram and/or block diagram to help the reviewers understand your proposal. Be sure to introduce and discuss your figures in the text.
 
 I will need 2 seperate MCU's, a LCD display, and an altitude sensor. All of these devices will communicate through I2C. One MCU will be reading the altitude sensor values, the other will be displaying the values to the LCD display.
+![image](circuit_diagram.png)
 
 ## Software overview
 
 Discuss, at a high level, a concept of how your code will work. Include a *high-level* flowchart. This is a high-level concept that should concisely communicate the project's concept.
 
 I will be using C to communicate with 2 different microcontrollers via I2C. The first controller will be reading the sensors values using I2C then also communicating to the second MCU (FR2310) to display the values on an LCD display. 
+![image](flowchart.png)
 
 ## Testing Procedure
 
